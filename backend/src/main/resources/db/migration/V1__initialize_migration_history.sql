@@ -1,0 +1,1 @@
+-- Infrastructure baseline. Business tables are introduced by later migrations.

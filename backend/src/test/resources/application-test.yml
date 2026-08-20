@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:wafa_gestion;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+app:
+  cors:
+    allowed-origins: http://localhost:5173
+  security:
+    jwt:
+      secret: d2FmYS1nZXN0aW9uLXRlc3Qtc2VjcmV0LWtleS1hdC1sZWFzdC0zMi1ieXRlcw==
+      expiration: PT1H
